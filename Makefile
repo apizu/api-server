@@ -1,8 +1,9 @@
 
 .PHONY: all
 all:
-	go build -o app main.go 
+	mkdir build/
+	go build -o build/app main.go 
 
 .PHONY: clean
 clean:
-	-rm app
+	-rm build/app
